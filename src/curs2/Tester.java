@@ -6,7 +6,7 @@ public class Tester {
 	
 	String nume;
 	int RatePerHour;
-
+	int age;
 	
 	
 	//constructor default - metodas speciala pentru a putea crea o instanta din acea clasa
@@ -14,9 +14,10 @@ public class Tester {
 		
 	}
 	
-	public Tester(String nume, int ratePerHour ) {
+	public Tester(String nume, int ratePerHour, int age ) {
 		setNume(nume);
 		setRatePerHour(ratePerHour);
+		setAge(age);
 	}
 	
 	//metode getter & setter
@@ -44,6 +45,12 @@ public class Tester {
 		RatePerHour = ratePerHour;
 	}
 	
+	public int getAge() {
+		return age;
+	}
 	
+	public void setAge(int oneAge) {
+		age = oneAge;
+	}
 	
 }
