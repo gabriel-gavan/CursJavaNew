@@ -42,7 +42,7 @@ public class ConditionalOperator {
 		 } else {
 			 System.out.println("Num2 is negative");
 			 }
-		//verificam daca num1 si num2 sunt pozive
+		//verificam daca num1 si num2 sunt pozitive
 	if (num1>0 && num2>0) {
 		System.out.println("Both numbers are positive");
 	} else {System.out.println("At least one is negative");
