@@ -14,9 +14,7 @@ public class numereparetema3 {
 		
 				
 		int i=0;
-		int par = 0;
-		int impar = 0;
-		
+			
 		
 		if (numar1>numar2) {
 			System.out.println("Second entered number is smaller than the first one. Cannot provide the odd numbers!!!");}
@@ -26,7 +24,7 @@ public class numereparetema3 {
 					for (i=numar1;i<=numar2;i++) {
 					
 							if (i%2==0) {
-								par++;
+								
 								
 								System.out.println(i);}
 			

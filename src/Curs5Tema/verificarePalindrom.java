@@ -11,7 +11,7 @@ public class verificarePalindrom {
 		  
 		  Scanner scan = new Scanner(System.in);
 			System.out.println("Introdu un cuvant sa vedem daca e palindrom:");
-			n = scan.nextLine();
+			n = scan.nextLine().toLowerCase();
 			
 			 int length = n.length();   
 		      for ( int i = length - 1; i >= 0; i-- )  
