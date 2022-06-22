@@ -12,10 +12,10 @@ public class SeriaFibonacciWhileEx2 {
 			 	int n =scan.nextInt();
 				int fib1=0;
 				int fib2=1;
-				int fib3=0;
+				int fib3=1;
 				int i = 2;
 				System.out.println("Seria Fibonacci pentru " + n + " numere: " );
-				
+				System.out.println(fib1);
 				while (i<=n) {
 					System.out.println(fib3);
 					fib3 = fib1+fib2;
