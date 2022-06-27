@@ -11,9 +11,9 @@ public class DuplicateNames {
 		String[] myStringArray =  {"Maria", "Bob", "Ion", "George", "Oana",	"Bogdan", "Oana", "Ion"};
 		
 		
-		for (int i = 0; i < 8; i++) { 
+		for (int i = 0; i < myStringArray.length; i++) { 
 			
-			for (int j = i+1 ; j < 8; j++) { 
+			for (int j = i+1 ; j < myStringArray.length; j++) { 
 				if (myStringArray[i].equals(myStringArray[j])) {
 					
 					System.out.println("Nume duplicat:" + myStringArray[j]);
