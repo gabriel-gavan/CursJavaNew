@@ -1,12 +1,17 @@
 package Curs9Tema;
 
 public class Teacher {
-	private String Course;
-	private int ExperienceYears;
-	private String Schedule;
-	public String getCourse() {
-		return Course;
-	}
+	public String course;
+	   public int experienceYears;
+	   public String schedule;
+
+	   public Teacher(String course, int experienceYears, String schedule){
+	      this.course = course;
+	      this.schedule = schedule;
+	      this.experienceYears = experienceYears;
+
+	   }
+	/*
 	public void setCourse(String course) {
 		Course = course;
 	}
@@ -22,5 +27,5 @@ public class Teacher {
 	public void setSchedule(String schedule) {
 		Schedule = schedule;
 	}
-	
+	*/
 }
