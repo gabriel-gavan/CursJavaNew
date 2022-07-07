@@ -1,7 +1,7 @@
 package Curs10Tema;
 
 public class Masina extends Vehicul{
-	private String motorizare;
+
 	public Masina(String brand, String nivelPoluare, String vitezaMedie) {
 	      super(brand, nivelPoluare, vitezaMedie);
 	
@@ -18,7 +18,8 @@ public class Masina extends Vehicul{
 	 }
 	@Override
 	public  void  detaliiVehicul (){
-		 System.out.println("Nivelul de poluare pentru masina este :6 si\r\n"
-		 		+ "viteza medie atinsa este de 190 km/h");;
+		Masina obj1 = new Masina("Toyota", "5","220");
+		 System.out.println("Nivelul de poluare pentru " + obj1.getBrand() + " este euro " + obj1.getNivelPoluare() + " si "
+		 		+ "viteza medie atinsa este de "  + obj1.getvitezaMedie() + " km/h");;
 	}
 }
