@@ -48,6 +48,7 @@ public class Legume {
 					
 				
 				System.out.println("Leguma aleasa de tine are " + value + " calorii");
+				
 				}
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
