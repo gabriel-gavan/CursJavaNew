@@ -18,6 +18,9 @@ public class TestSavingsAccount {
 		} catch (InsufficientFundsException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			   System.out.println("Thank you for using the ATM!");
+
 		}
 	}
 
