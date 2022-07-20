@@ -33,26 +33,21 @@ public class Legume {
 	}
 	
 	
-		public void citesteCaloriiLegume(String key) throws FileNotFoundException,IOException {
-			try(FileInputStream inputStream = new FileInputStream("test.properties")) {
-				Properties prop = new Properties();
-				prop.load(inputStream);
-			
-				String value = prop.getProperty(key);
-				
-				if (prop.getProperty(key) == null) {
-					System.out.println("Nu Vindem aceasta leguma");
-					
-				} else {
-					
-					
-				
-				System.out.println("Leguma aleasa de tine are " + value + " calorii");
-				
-				}
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-		}
-		}
+	public String citesteCaloriiLegume(String key) throws FileNotFoundException,IOException {
+        String value = null;
+     try(FileInputStream inputStream = new FileInputStream("test.properties")) {
+           Properties prop = new Properties();
+           prop.load(inputStream);
+           value = prop.getProperty(key);
+        /* if (prop.getProperty(key) == null) {
+              System.out.println("Nu Vindem aceasta leguma");
+           } else {
+           System.out.println("Leguma aleasa de tine are " + value + " calorii");
+           */
+        } catch (FileNotFoundException e) {
+           // TODO Auto-generated catch block
+           e.printStackTrace();
+     }
+     return value;
+     }
 }
